@@ -16,9 +16,9 @@ public class Puppy {
         name = namePuppy;
     }
 
-    public Puppy(String namePuppy, int agePuppy) {
+    public Puppy(String name, int age) {
         //Этот метод - конструктор с параметрами
-        name = namePuppy;
-        age = agePuppy;
+        this.name = name;
+        this.age = age;
     }
 }
