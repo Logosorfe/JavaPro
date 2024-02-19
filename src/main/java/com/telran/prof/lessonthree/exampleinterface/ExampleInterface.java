@@ -10,5 +10,18 @@ public class ExampleInterface {
         String flyName1 = Flyable.FLY_NAME;
         String flyName2 = Bird.FLY_NAME;
 
+        AirPlane airPlane = new AirPlane();
+
+        Flyable[] flyables = {bird, bird1, airPlane};
+        for (Flyable flyable : flyables) {
+            flyable.fly();
+        }
+
+        Cat cat = new Cat();
+
+        AbleToEat[] ableToEats = {bird, bird1, cat};
+        for (AbleToEat element : ableToEats) {
+            element.eat();
+        }
     }
 }
