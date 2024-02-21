@@ -9,6 +9,8 @@ public class OperationApp {
         Operation opTwo = new Operation("make homework", OperationState.COMPLETED);
         printAllCompletedOperation(opOne, opTwo);
         printAllCompletedOperation(opTwo);
+//        EnumExample.checkDay(5);
+//        String helloPhrase = EnumExample.helloPhrase;
     }
 
     private static void printAllCompletedOperation(Operation... operations) {
