@@ -16,14 +16,18 @@ public class MyList {
 
     private class Itr implements Iterator<String> {
 
+        int cursor;
+
         @Override
         public boolean hasNext() {
-            return false;
+            return cursor < elements.length;
         }
 
         @Override
         public String next() {
-            return null;
+            int i = cursor;
+            cursor = i + 2;
+            return elements[i];
         }
     }
 }
