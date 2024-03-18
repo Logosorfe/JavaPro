@@ -1,6 +1,5 @@
 package com.telran.prof.lessoneleven.queue.customdeque;
 
-import java.util.Arrays;
 
 public class CustomArrayDeque implements MyDeque {
 
@@ -16,36 +15,44 @@ public class CustomArrayDeque implements MyDeque {
         }
 
         this.elements = new Integer[capacity];
+        this.head = (capacity - 1) / 2;
+        this.tail = head;
     }
 
     @Override
     public void addToHead(Integer element) {
-
+        head = head - 1;
+        elements[head] = element;
     }
 
     @Override
     public void addToTail(Integer element) {
-
+        elements[tail] = element;
+        tail++;
     }
 
     @Override
     public Integer pollHead() {
-        return null;
+        Integer element = elements[head];
+        head++;
+        return element;
     }
 
     @Override
     public Integer pollTail() {
-        return null;
+        tail--;
+        Integer element = elements[tail];
+        return element;
     }
 
     @Override
     public Integer peekHead() {
-        return null;
+      return null;
     }
 
     @Override
-    public Integer peelTail() {
-        return null;
+    public Integer peekTail() {
+      return null;
     }
 
     @Override
@@ -55,6 +62,10 @@ public class CustomArrayDeque implements MyDeque {
 
     @Override
     public String toString() {
-        return Arrays.toString(elements);
+        StringBuilder sb = new StringBuilder();
+        for (int i = tail - 1; i >= head; i--) {
+            sb.append(elements[i]).append(" ");
+        }
+        return sb.toString();
     }
 }

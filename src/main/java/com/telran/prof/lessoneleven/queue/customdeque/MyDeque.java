@@ -12,7 +12,7 @@ public interface MyDeque {
 
     Integer peekHead();
 
-    Integer peelTail();
+    Integer peekTail();
 
     boolean isEmpty();
 }
