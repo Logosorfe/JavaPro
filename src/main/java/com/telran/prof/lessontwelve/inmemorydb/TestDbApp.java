@@ -22,13 +22,19 @@ public class TestDbApp {
             }
         }
 
-        Map<Integer, Student> map = new HashMap<>();
-        map.put(alex.getId(), alex);
-        map.put(oleg.getId(), oleg);
-        map.put(egor.getId(), egor);
-        map.put(max.getId(), max);
+        InMemoryDatabase database = new InMemoryDatabase();
+        students.forEach(student -> database.addStudent(student));
 
-        Student student = map.get(id);
+        Student student = database.getStudent(id);
         System.out.println("Found " + student);
+
+//        Map<Integer, Student> map = new HashMap<>();
+//        map.put(alex.getId(), alex);
+//        map.put(oleg.getId(), oleg);
+//        map.put(egor.getId(), egor);
+//        map.put(max.getId(), max);
+
+//        Student student = map.get(id);
+//        System.out.println("Found " + student);
     }
 }
