@@ -1,7 +1,9 @@
 package com.telran.prof.lessontwelve;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class TestMap {
 
@@ -41,5 +43,7 @@ public class TestMap {
 
         boolean resultTwo = map.containsKey("e");
         System.out.println("Map contains key e is :" + resultTwo);
+
+
     }
 }
