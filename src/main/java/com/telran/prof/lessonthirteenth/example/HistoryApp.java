@@ -37,19 +37,19 @@ public class HistoryApp {
         Map<User, Map<String, List<Request>>> historyWithDate = new HashMap<>();
 
         Map<String, List<Request>> alexDateRequestMap = new HashMap<>();
-        alexDateRequestMap.put("20240325",requestsAlexOne);
+        alexDateRequestMap.put("20240325", requestsAlexOne);
         alexDateRequestMap.put("20240324", requestsAlexTwo);
-        historyWithDate.put(alex,alexDateRequestMap);
+        historyWithDate.put(alex, alexDateRequestMap);
 
         Map<String, List<Request>> maxDateRequestMap = new HashMap<>();
-        maxDateRequestMap.put("20240323",requestsMaxTwo);
+        maxDateRequestMap.put("20240323", requestsMaxTwo);
         maxDateRequestMap.put("20240320", requestsMaxOne);
-        historyWithDate.put(max,maxDateRequestMap);
+        historyWithDate.put(max, maxDateRequestMap);
 
-        for(Map.Entry<User, Map<String, List<Request>>> pair : historyWithDate.entrySet()) {
+        for (Map.Entry<User, Map<String, List<Request>>> pair : historyWithDate.entrySet()) {
             User user = pair.getKey();
             Map<String, List<Request>> map = pair.getValue();
-            for(Map.Entry<String, List<Request>> innerPair : map.entrySet()) {
+            for (Map.Entry<String, List<Request>> innerPair : map.entrySet()) {
                 String date = innerPair.getKey();
                 for (Request request : innerPair.getValue()) {
                     System.out.println("" + user.getName() + " " +
@@ -57,5 +57,12 @@ public class HistoryApp {
                 }
             }
         }
+
+        System.out.println();
+
+        historyWithDate.forEach(((user, mapByDate) ->
+                mapByDate.forEach((date, requests) ->
+                        requests.forEach(request ->
+                                System.out.println("" + user.getName() + " " + date + " " + request)))));
     }
 }
