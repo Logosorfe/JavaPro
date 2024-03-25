@@ -24,4 +24,26 @@ public class SearchUtil {
             System.out.println();
         }
     }
+
+    public static void dfsPostOrder(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        dfsPostOrder(node.getLeft());
+
+        dfsPostOrder(node.getRight());
+
+        System.out.print(node.getValue() + " ");
+    }
+
+    public static void dfsPreOrder(TreeNode node) {
+        if(node == null) {
+            return;
+        }
+        System.out.print(node.getValue() + " ");
+
+        dfsPreOrder(node.getLeft());
+        dfsPreOrder(node.getRight());
+    }
+
 }
