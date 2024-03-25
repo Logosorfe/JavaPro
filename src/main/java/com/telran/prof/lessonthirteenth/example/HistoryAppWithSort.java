@@ -26,11 +26,17 @@ public class HistoryAppWithSort {
         );
 
         Map<String, Map<User, List<Request>>> mapByDate = new TreeMap<>();
-
         mapByDate.put("20240325", Map.of(alex, requestsAlexOne));
+        mapByDate.put("20240325", Map.of(max, requestsMaxOne));
         mapByDate.put("20240324", Map.of(alex, requestsAlexTwo));
         mapByDate.put("20240323", Map.of(max, requestsMaxTwo));
-        mapByDate.put("20240320", Map.of(max, requestsMaxOne));
+
+        Map<String, List<Map<User, List<Request>>>> historyMap = new TreeMap<>();
+        List<Map<User, List<Request>>> list = List.of(Map.of(alex, requestsAlexOne), Map.of(max, requestsMaxOne));
+        historyMap.put("20240325", list);
+        historyMap.put("20240324", List.of(Map.of(alex, requestsAlexTwo)));
+        historyMap.put("20240323", List.of(Map.of(max, requestsMaxTwo)));
+
 
         mapByDate.forEach(((date, userListMap) -> {
             userListMap.forEach(((user, requests) -> {
