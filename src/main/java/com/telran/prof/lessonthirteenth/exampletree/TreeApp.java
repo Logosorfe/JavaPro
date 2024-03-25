@@ -29,5 +29,7 @@ public class TreeApp {
 
          */
 
+        SearchUtil.breadthFirstSearch(customBinaryTree.getRoot());
+
     }
 }
