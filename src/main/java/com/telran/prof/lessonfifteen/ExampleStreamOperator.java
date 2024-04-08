@@ -11,6 +11,7 @@ public class ExampleStreamOperator {
         //peek - intermediate, analog foreach - make action for each element , but return stream
         //peek - use FI Consumer
         //map - intermediate , convert object
+        //flatMap -
 
 
         //Terminal
