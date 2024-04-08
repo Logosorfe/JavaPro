@@ -9,11 +9,13 @@ public class ExampleStreamOperator {
         //limit, skip - intermediate , limit count of elements in stream, skip - skip elements
         //distinct , intermediate, only unique elements in stream
         //peek - intermediate, analog foreach - make action for each element , but return stream
+        //peek - use FI Consumer
+        //map - intermediate , convert object
 
 
         //Terminal
-        //foreach - terminal, make action for each element of stream
-        // count - terminal,  count of elements in stream
+        //foreach - terminal, make action for each element of stream (use FI Consumer)
+        //count - terminal,  count of elements in stream
         //collect - terminal, collect element of stream to new collection
 
     }
