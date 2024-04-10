@@ -36,7 +36,14 @@ public class ItemApp {
                 .reduce((a, b) -> (a + b));
         //Optional -
         //Integer integer = result.orElse(0);
+        //result.isPresent()
+        //result.orElseThrow()
 
         System.out.println("Sum of items price is " + result.get());
+
+        Optional<Item> first = items.stream()
+                .filter(item -> item.getPrice() > 100)
+                .findFirst();
+        System.out.println(first.isPresent() ? "Yes" : "No");
     }
 }
