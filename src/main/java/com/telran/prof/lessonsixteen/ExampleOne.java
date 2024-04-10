@@ -40,5 +40,12 @@ public class ExampleOne {
         //
         String[][] strings = {{"a", "b"}, {"c", "a"}, {"e", "f"}};
         //filter "a" and print all elements
+
+        Stream.of(strings)
+                .flatMap(Stream::of)
+                .filter(x -> !"a".equals(x))
+                .forEach(System.out::println);
+
+
     }
 }
