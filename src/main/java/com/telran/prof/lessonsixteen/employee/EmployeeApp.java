@@ -1,6 +1,7 @@
 package com.telran.prof.lessonsixteen.employee;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,10 +28,18 @@ public class EmployeeApp {
 
         System.out.println("Developer list is " + developerList);
 
+        Comparator<Employee> employeeComparator = new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return (int) (o1.getSalary() - o2.getSalary());
+            }
+        };
+
         Employee juniorDeveloper = employees.stream()
                 .filter(employee -> !"CEO".equals(employee.getPosition()))
                 .filter(employee -> !"Manager".equals(employee.getPosition()))
-                .min((e1, e2) -> (int) (e1.getSalary() - e2.getSalary()))
+                //.min((e1, e2) -> (int) (e1.getSalary() - e2.getSalary()))
+                .min(employeeComparator)
                 .orElse(null);
 
         System.out.println("Junior developer is " + juniorDeveloper);
