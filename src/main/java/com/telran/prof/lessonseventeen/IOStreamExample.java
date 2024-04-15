@@ -2,8 +2,10 @@ package com.telran.prof.lessonseventeen;
 
 import com.telran.prof.lessontwo.exthree.D;
 
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Date;
+import java.util.Scanner;
 
 public class IOStreamExample {
 
@@ -11,6 +13,7 @@ public class IOStreamExample {
         //OutputStream, InputStream - byte stream
         //Reader, Writer - char stream
 
+        //System.out
         OutputStream out = System.out;
         System.out.println("Hello!");
         System.out.print("helloheloo");
@@ -27,5 +30,12 @@ public class IOStreamExample {
         System.out.println(date);
         System.out.printf("%tT%n", date);
 
+        //System.in
+        Scanner scanner = new Scanner(System.in);
+        InputStream in = System.in;
+
+        //System.err
+
+        System.err.println("Hello world!");
     }
 }
