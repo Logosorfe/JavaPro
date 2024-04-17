@@ -6,6 +6,11 @@ import java.util.List;
 
 public class CustomListWriter extends Writer {
 
+    private String path;
+
+    public CustomListWriter(String path) {
+        this.path = path;
+    }
 
     @Override
     public void write(char[] cbuf, int off, int len) throws IOException {
@@ -19,10 +24,6 @@ public class CustomListWriter extends Writer {
 
     @Override
     public void close() throws IOException {
-
-    }
-
-    public void write(List<String> strings, String path) {
 
     }
 }
