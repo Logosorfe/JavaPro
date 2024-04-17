@@ -17,6 +17,27 @@ public class ParserExample {
         try {
             FileInputStream stream = new FileInputStream(path);
             InputStreamReader reader = new InputStreamReader(stream);
+
+//            int data = reader.read();
+//            StringBuilder stringBuilder = new StringBuilder();
+//            while (data != -1) {
+//
+//                if(data != '\n') {
+//                   stringBuilder.append((char) data);
+//                } else {
+//                    String s = stringBuilder.toString();
+//                    System.out.println(s);
+//                }
+//                data = reader.read();
+//            }
+
+//            char[] buff = new char[512];
+//            while (reader.ready()) {
+//                int read = reader.read(buff);
+//                System.out.println(Arrays.toString(buff));
+//            }
+
+
             BufferedReader bufferedReader = new BufferedReader(reader);
             while (bufferedReader.ready()) {
                 String line = bufferedReader.readLine();
@@ -33,6 +54,8 @@ public class ParserExample {
                         split[7]);
                 matches.add(match);
             }
+
+
 
         } catch (IOException exception) {
             exception.printStackTrace();
