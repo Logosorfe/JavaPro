@@ -17,11 +17,11 @@ public class TestArrayTwo {
         printArray(arraySix);
     }
 
-    private static void printArray(int[][] arrayTwo) {
-        for (int i = 0; i < arrayTwo.length; i++) {
-            if (arrayTwo[i] != null) {
-                for (int j = 0; j < arrayTwo[i].length; j++) {
-                    System.out.print(arrayTwo[i][j] + " ");
+    private static void printArray(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != null) {
+                for (int j = 0; j < array[i].length; j++) {
+                    System.out.print(array[i][j] + " ");
                 }
                 System.out.println();
             }

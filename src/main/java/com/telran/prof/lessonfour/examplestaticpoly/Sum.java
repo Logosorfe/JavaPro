@@ -1,6 +1,5 @@
 package com.telran.prof.lessonfour.examplestaticpoly;
 
-import java.util.Arrays;
 
 public class Sum {
 
@@ -21,6 +20,5 @@ public class Sum {
         System.out.println(sum.sum(1, 2));
         System.out.println(sum.sum(1, 2, 3));
         System.out.println(sum.sum(2.0, 1.3));
-        Arrays.sort(new int[2]);
     }
 }

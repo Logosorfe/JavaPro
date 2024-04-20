@@ -15,7 +15,7 @@ public class TestCustomLinkedList {
 
         System.out.println(list);
         System.out.println("Size of linked list " + list.size());
-        list.add(1, 20);
+        list.add(0, 20);
         System.out.println(list);
         list.add(4, 30);
         System.out.println(list);

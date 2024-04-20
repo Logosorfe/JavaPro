@@ -5,7 +5,7 @@ public class OperationApp {
     public static void main(String[] args) {
         Operation opOne = new Operation("do homework", OperationState.NEW);
 //        Operation opTwo = new Operation("check homework",
-//                OperationState.COMPLETED, "COMPLET");
+//                OperationState.COMPLETED, "COMPLETED");
         Operation opTwo = new Operation("make homework", OperationState.COMPLETED);
         printAllCompletedOperation(opOne, opTwo);
         printAllCompletedOperation(opTwo);

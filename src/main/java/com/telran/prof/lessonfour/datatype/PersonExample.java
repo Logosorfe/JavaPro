@@ -10,6 +10,7 @@ public class PersonExample {
 
         System.out.println("Person after " + alex);
         alex = null;
+        System.out.println(alex);
     }
 
     private static void changePersonName(Person maxim) {

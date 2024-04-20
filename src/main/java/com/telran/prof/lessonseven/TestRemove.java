@@ -31,6 +31,8 @@ public class TestRemove {
     //            }
     //        }
     //    System.out.println(list);
+        /** На самом деле последний метод будет работать не верно, он будет перепрыгивать значения
+        Можно проверить если создать список из одних нечётных цифр */
 
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {

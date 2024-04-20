@@ -1,6 +1,5 @@
 package com.telran.prof.lessonfive;
 
-import com.telran.prof.lessontwo.exthree.A;
 
 import java.util.ArrayList;
 import java.util.Arrays;
