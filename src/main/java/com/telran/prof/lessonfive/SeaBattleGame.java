@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class SeaBattleGame {
 
-    private static final int FIELD_LENGTH = 10;
+    private static final int FIELD_LENGTH = 11; /** Поменял значение с "10", чтоб не
+    возникала ошибка ArrayIndexOutOfBoundsException и легче расставлять корабли с
+    появившейся номерацией */
     //Массив кораблей для инициализации, элементы по такому типу {количество_палуб,количество_кораблей}
     private static final int[][] SHIP_DECK_AMOUNT = {{4, 1}, {3, 2}, {2, 3}, {1, 4}};
     private static final Scanner scanner = new Scanner(System.in);
@@ -29,6 +31,7 @@ public class SeaBattleGame {
      * Метод запрашивает и расставляет корабли на поле
      */
     private void fillPlayerField(char[][] playerField) {
+        printField(playerField);/** чтоб легче ориентироваться перед расстановкой кораблей */
         //Идем по массиву кораблей
         for (int i = 0; i < SHIP_DECK_AMOUNT.length; i++) {
             //Определяем количество кораблей с определенной палубой
@@ -59,7 +62,9 @@ public class SeaBattleGame {
                     direction = scanner.nextInt();
                     //Проверяет что корабль распологается корректно и если это так
                     //то возвращает 0 и выходим из этого цикла, что бы отрисовать корабль на поле
-                    result = validateCoordinateForShip(playerField, x, y, direction, i);
+                    result = validateCoordinateForShip(playerField, x, y, direction,
+                            SHIP_DECK_AMOUNT[i][0]);/**"i" не передаёт количество палуб,
+                    поэтому заменил на SHIP_DECK_AMOUNT[i][0] */
                 }
 
                 int shipDeck = SHIP_DECK_AMOUNT[i][0];
@@ -124,7 +129,7 @@ public class SeaBattleGame {
     private static int validateCoordinateForShip(char[][] field, int x, int y, int direction, int shipDeck) {
         // horizontally
         if (direction == 1) {
-            for (int i = 0; i < shipDeck - 1; i++) {
+            for (int i = 0; i < shipDeck; i++) {/** в случае "shipDeck - 1" метод неисправен */
                 if (x > 0) {
                     if ('=' == field[y][x + i - 1]) {
                         return -1;
@@ -140,7 +145,7 @@ public class SeaBattleGame {
                 }
             }
         } else if (direction == 2) { // vertically
-            for (int i = 0; i < shipDeck - 1; i++) {
+            for (int i = 0; i < shipDeck; i++) {/** то же что и выше */
                 if (y > 0) {
                     if ('=' == field[y + i - 1][x]) {
                         return -1;

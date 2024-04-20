@@ -25,13 +25,13 @@ public class CustomLinkedList {
     }
 
     public void add(int index, int data) {
-        Node newNode = new Node(data, null);
-        size++;/** тут вообще пропустили это поле */
         if (index < 0 || index >= size) {/** при index < 1 не возможно внести узел по
          нулевому индексу, поэтому подправил код */
             System.out.println("Index out of bounds");
             return;
         }
+        Node newNode = new Node(data, null);
+        size++;/** тут вообще пропустили это поле */
         if (index == 0) {
             if (head == null) {
                 head = newNode;
