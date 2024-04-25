@@ -14,7 +14,7 @@ public class CustomArrayDeque implements MyDeque {
          элементом. Мало того что само дальнейшее утверждение "Capacity must be more than 1"
          не будет работать. Так ещё и выдаст ошибку ArrayIndexOutOfBoundsException при
          использовании метода addToHead, созданного тут. Поставил изначальный размер в 16 элементов.*/
-            throw new IllegalArgumentException("Capacity must be more than 1");
+            throw new IllegalArgumentException("Capacity must be more than 15");
         }
 
         this.elements = new Integer[capacity];
