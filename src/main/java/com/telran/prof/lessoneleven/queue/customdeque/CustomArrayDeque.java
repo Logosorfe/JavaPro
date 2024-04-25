@@ -17,9 +17,8 @@ public class CustomArrayDeque implements MyDeque {
             throw new IllegalArgumentException("Capacity must be more than 1");
         }
 
-        this.elements = new Integer[capacity];/** При "(capacity - 1) / 2" изначальный
-         head никогда не будет находится по середине, как это подразумевает очередь ArrayDeque */
-        this.head = (capacity) / 2;
+        this.elements = new Integer[capacity];
+        this.head = (capacity - 1) / 2;
         this.tail = head;
     }
 
@@ -58,7 +57,7 @@ public class CustomArrayDeque implements MyDeque {
     @Override
     public Integer pollTail() { /** Тоже исправил, при этом ещё местами был напутан код */
         Integer element = elements[tail];
-        elements[tail]=null;
+        elements[tail] = null;
         tail--;
         return element;
     }
