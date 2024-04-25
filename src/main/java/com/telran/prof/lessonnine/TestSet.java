@@ -6,8 +6,8 @@ import java.util.TreeSet;
 public class TestSet {
 
     public static void main(String[] args) {
-        //Set - intf
-        //SortedSet, NavigableSet - intf
+        //Set - interface
+        //SortedSet, NavigableSet - interface
         //TreeSet, HashSet
 
         //TreeSet - хранит только уникальные элементы, порядка нет, но есть сортировка

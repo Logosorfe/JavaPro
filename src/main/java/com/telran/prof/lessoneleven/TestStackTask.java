@@ -5,7 +5,7 @@ import java.util.Stack;
 public class TestStackTask {
 
     public static void main(String[] args) {
-        String test = "addabchffh";
+        String test = "addabchffh";/** А если такую строку "adadbchfhf",то не сработает*/
         //aabchh  // bc
         TestStackTask task = new TestStackTask();
         String result = task.deleteDuplicate(test);

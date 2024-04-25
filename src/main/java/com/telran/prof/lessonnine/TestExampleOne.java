@@ -13,8 +13,8 @@ public class TestExampleOne {
             characters.add(temp);
         }
 
-        System.out.println("Count of letters " + characters.size());
-        System.out.println("Letters : " + characters);
+        System.out.println("Count of symbols " + characters.size());
+        System.out.println("Symbols : " + characters);
 
         char[] chars = inputData.toCharArray();
     }

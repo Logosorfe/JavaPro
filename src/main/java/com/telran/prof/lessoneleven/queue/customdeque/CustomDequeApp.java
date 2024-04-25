@@ -15,9 +15,9 @@ public class CustomDequeApp {
 
         //head = 5;
         //tail = 5;
-        // head       tail
-        //___ _ 15 10 5 8 _ _ __//
-        // 1 2 4 5 6 7 8
+        //        head      tail
+        //[___null 15 10  5  8  null___]
+        // 0  1  2  3  4  5  6  7  8   indexes
 
         System.out.println(customArrayDeque);
         System.out.println(customArrayDeque.pollHead());

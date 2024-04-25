@@ -20,7 +20,7 @@ public class TestStackExample {
         //  am   //
         //__I____//
 
-        System.out.println("element am in position " + stack.search("student"));
+        System.out.println("element in first position " + stack.search("student"));
 
         System.out.println(stack);
         String peek = stack.peek();
