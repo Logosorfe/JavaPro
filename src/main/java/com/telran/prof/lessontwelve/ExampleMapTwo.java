@@ -20,8 +20,8 @@ public class ExampleMapTwo {
 
         Set<String> stringSetOne = new TreeSet<>();
         Map<String, Integer> mapTwo = new TreeMap<>();
-        mapTwo.put("d", 100);  // a->100
-        mapTwo.put("a", 200);  // b->200
+        mapTwo.put("d", 100);  // d->100
+        mapTwo.put("a", 200);  // a->200
         mapTwo.put("c", 300);  // c->300
         mapTwo.forEach((key, value) -> {
             System.out.println("" + key + " : " + value);
