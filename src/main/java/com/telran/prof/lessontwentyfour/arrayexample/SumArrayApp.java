@@ -1,6 +1,5 @@
 package com.telran.prof.lessontwentyfour.arrayexample;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class SumArrayApp {
