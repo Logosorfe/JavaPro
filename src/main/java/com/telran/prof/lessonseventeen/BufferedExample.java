@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class BufferedExample {
 
     public static void main(String[] args) throws Exception { // Так делать не нужно
-        String pathToFile = "/Volumes/Macintosh HD - Data 1/telran3010prof/src/main/java/com/telran/prof/lessonseventeen/file.txt";
+        String pathToFile = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonseventeen/file.txt";
         InputStream fileInputStream = new FileInputStream(pathToFile); // FNF
 
         Scanner scanner = new Scanner(fileInputStream);

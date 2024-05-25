@@ -8,7 +8,7 @@ public class ChangeOutExample {
 
     public static void main(String[] args) throws Exception {
 
-        String path = "/Volumes/Macintosh HD - Data 1/telran3010prof/src/main/java/com/telran/prof/lessonseventeen/files/out.txt";
+        String path = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonseventeen/files/out.txt";
         OutputStream fileOutputStream = new FileOutputStream(path);
         PrintStream printStream = new PrintStream(fileOutputStream);
 

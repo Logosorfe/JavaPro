@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class BufferFileReaderTest {
 
     public static void main(String[] args) {
-        String pathToFile = "/Volumes/Macintosh HD - Data 1/telran3010prof/src/main/java/com/telran/prof/lessonseventeen/file.txt";
+        String pathToFile = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonseventeen/file.txt";
 
         try {
             FileInputStream fileInputStream = new FileInputStream(pathToFile); // FNF

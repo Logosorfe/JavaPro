@@ -19,7 +19,7 @@ public class IOStreamExample {
         System.out.print("helloheloo");
 
         int x = 100;
-        System.out.printf("Print format integer : x = " + x + ";\n");
+        System.out.print("Print format integer : x = " + x + ";\n");
         System.out.printf("Print format integer : x = %d;\n", x);
 
         System.out.printf("Format PI = %.2f\n", Math.PI);
