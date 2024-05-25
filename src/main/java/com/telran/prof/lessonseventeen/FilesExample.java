@@ -22,14 +22,14 @@ public class FilesExample {
 
         //create directory
         File newDirectory = new File(dirPath + "/another");
-        System.out.println("New directory is exists " + newDirectory.exists());
-        boolean mkdir = newDirectory.mkdir();
-        System.out.println("New directory is exists " + newDirectory.exists());
+        System.out.println("New directory exists - " + newDirectory.exists());
+        boolean isCreated = newDirectory.mkdir();
+        System.out.println("New directory has just been created - " + isCreated);
 
         //file delete
         File fileToDelete = new File(path);
-        boolean delete = fileToDelete.delete();
-        System.out.println("file from files is delete ? " + delete);
+        boolean isDeleted = fileToDelete.delete();
+        System.out.println("file from files is delete ? " + isDeleted);
 
         //list file names
         String pathToLesson = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonseventeen/";
