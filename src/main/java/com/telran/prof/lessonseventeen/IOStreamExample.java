@@ -33,6 +33,7 @@ public class IOStreamExample {
         //System.in
         Scanner scanner = new Scanner(System.in);
         InputStream in = System.in;
+        scanner.close();/** забыли закрыть поток*/
 
         //System.err
 

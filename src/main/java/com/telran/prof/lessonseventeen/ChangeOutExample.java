@@ -16,5 +16,8 @@ public class ChangeOutExample {
 
         System.out.println("Hello");
         System.out.println("Class");
+
+        fileOutputStream.close();/** забыли закрыть поток*/
+        printStream.close();/** забыли закрыть поток*/
     }
 }

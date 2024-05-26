@@ -23,5 +23,6 @@ public class BufferedExample {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
         System.out.println(s);
+        reader.close();/** забыли закрыть поток*/
     }
 }

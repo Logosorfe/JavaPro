@@ -10,7 +10,7 @@ public class CustomListWriterExample {
 
     public static void main(String[] args) {
         List<String> strings = Arrays.asList("Hello", "World", "Java", "SQL");
-        String path = "/Volumes/Macintosh HD - Data 1/telran3010prof/src/main/java/com/telran/prof/lessoneghteen/outout.txt";
+        String path = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessoneighteen/outout.txt";
 
 
         Writer customListWriter = new CustomListWriter(path);
