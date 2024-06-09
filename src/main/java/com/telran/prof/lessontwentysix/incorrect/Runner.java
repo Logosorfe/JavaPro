@@ -1,9 +1,8 @@
 package com.telran.prof.lessontwentysix.incorrect;
 
 //import static com.telran.prof.lessontwentyfive.ExampleFour.counter;
-
 //public class Runner implements Runnable {
-//
+
 //    @Override
 //    // public synchronized void run() // - можно в сигнатуре метода
 //    public void run() {

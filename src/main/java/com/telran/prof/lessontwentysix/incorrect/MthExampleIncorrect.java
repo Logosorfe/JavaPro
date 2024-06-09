@@ -4,7 +4,7 @@ public class MthExampleIncorrect {
 
     public static int counter = 0;
 
-//    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
 //        Runner runnerOne = new Runner(); //  runnerOne
 //        Runner runnerTwo = new Runner();
@@ -27,6 +27,6 @@ public class MthExampleIncorrect {
 //        three.join();
 //
 //        System.out.println("Counter = " + counter);
-//
-//    }
+
+    }
 }
