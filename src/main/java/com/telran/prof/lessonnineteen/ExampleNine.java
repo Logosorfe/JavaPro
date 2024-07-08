@@ -12,7 +12,7 @@ public class ExampleNine {
     private static void check(int n) {
         try {
             int x = 10 / n;
-            int y[] = new int[n];
+            int[] y = new int[n];
             y[n] = 10;
         } catch (Exception exception) {
             if (exception instanceof ArithmeticException) {

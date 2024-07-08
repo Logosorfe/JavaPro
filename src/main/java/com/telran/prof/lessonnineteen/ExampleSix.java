@@ -23,7 +23,7 @@ public class ExampleSix {
         try {
             System.out.println(s.toUpperCase());
         } catch (NullPointerException exception) {
-            System.out.println("Incorrect index");
+            System.out.println("Exception with null");
         }
     }
 }

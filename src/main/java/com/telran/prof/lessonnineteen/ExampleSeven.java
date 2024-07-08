@@ -12,9 +12,9 @@ public class ExampleSeven {
             System.out.println(s);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException e) { //IOException, FileNotFoundException
+        } catch (IOException e) { //FileNotFoundException extends IOException
             e.printStackTrace();
-        } catch (Exception exception) { //Exception, extends Exception
+        } catch (Exception exception) { //IOException extends Exception
             exception.printStackTrace();
         }
     }
