@@ -19,5 +19,6 @@ public class StaticExample {
         StaticExample exampleThree = new StaticExample();
         System.out.println(exampleThree.hello);
 
+        System.out.println(hello);
     }
 }

@@ -14,7 +14,7 @@ public class Dog {
         //
     }
 
-    void sleepeng() {
+    void sleeping() {
         //
     }
 }
