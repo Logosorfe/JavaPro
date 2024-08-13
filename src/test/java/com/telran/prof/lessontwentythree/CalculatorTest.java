@@ -1,6 +1,6 @@
 package com.telran.prof.lessontwentythree;
 
-import com.telran.prof.lessontwo.exthree.C;
+import com.telran.prof.lessonsbeforespring.lesson23.Calculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
