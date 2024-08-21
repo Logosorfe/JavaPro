@@ -16,6 +16,7 @@ public class DescriptionDay {
                 System.out.println("Better day");
                 break;
             case SUNDAY:
+                /** Тут не поставили break, поэтому перешло на SATURDAY */
             case SATURDAY:
                 System.out.println("Best");
                 break;

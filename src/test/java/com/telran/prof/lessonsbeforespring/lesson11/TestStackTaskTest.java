@@ -1,4 +1,4 @@
-package com.telran.prof.lesson11;
+package com.telran.prof.lessonsbeforespring.lesson11;
 
 import com.telran.prof.lessonsbeforespring.lesson11.TestStackTask;
 import org.junit.jupiter.api.Test;

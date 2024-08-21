@@ -14,6 +14,7 @@ public class ExamApplication {
                 new Student("Max"),
                 new Student("Egor"),
                 new Student("Slava"));
+        System.out.println(students);
 
         Random random = new Random();
         for (Student currentStudent : students) {

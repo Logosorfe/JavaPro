@@ -12,7 +12,7 @@ public class TestListTwo {
         System.out.println(list);
 
         // add(0,1) O(n)
-        list.add(0, 3);  // 3 4 5 6
+        list.add(0, 3);  // 3 1 2
         System.out.println(list);
         list.add(0, 4);
         list.add(0, 5);

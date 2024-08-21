@@ -4,7 +4,8 @@ public class Student {
 
     private String name;
 
-    private int rate = 0;
+    private int rate = 0; /** Можно и не инициализировать, всё равно, при создании объекта,
+ будет присвоен ноль */
 
     public Student(String name) {
         this.name = name;

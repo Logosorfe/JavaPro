@@ -9,6 +9,6 @@ public class Bird implements Flyable, AbleToEat {
 
     @Override
     public void eat() {
-
+        System.out.println("Bird eat!");
     }
 }

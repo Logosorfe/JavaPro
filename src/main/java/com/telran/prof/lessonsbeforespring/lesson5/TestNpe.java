@@ -10,7 +10,7 @@ public class TestNpe {
     }
 
     private static void chekString(String str) {
-        if ("Hello".equals(str)) {
+        if ("Hello".equals(str)) {/** Если бы str.equals("Hello"), то NullPointException */
             System.out.println("Hello! Hello!");
         }
     }
