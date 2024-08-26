@@ -18,7 +18,7 @@ public class TestMap {
         map.put("b", 200);  // b->200
         map.put("c", 300);  // c->300
         map.put("d", 400);  // d->400
-        map.put("e", 400);  // d->400
+        map.put("e", 400);  // e->400
         map.put("c", 50);
         map.put(null, 600);
 

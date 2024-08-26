@@ -18,7 +18,7 @@ public class ExampleFI {
 
         printerTwo.print("Max");
 
-        Printable lowerCasePrinter = text -> System.out.println(text.toLowerCase());
+        Printable lowerCasePrinter = (text) -> System.out.println(text.toLowerCase());
 
         lowerCasePrinter.print("Egor");
 

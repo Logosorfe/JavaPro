@@ -1,4 +1,4 @@
-package com.telran.prof.lesson23;
+package com.telran.prof.lessonsbeforespring.lesson23;
 
 import com.telran.prof.lessonsbeforespring.lesson23.ArrayService;
 import com.telran.prof.lessonsbeforespring.lesson23.IncorrectInputArrayException;
