@@ -1,10 +1,10 @@
 package com.telran.prof.lessonsbeforespring.lesson21.generics;
 
-public class TesString {
+public class TestString {
 
     private String obj;
 
-    public TesString(String obj) {
+    public TestString(String obj) {
         this.obj = obj;
     }
 

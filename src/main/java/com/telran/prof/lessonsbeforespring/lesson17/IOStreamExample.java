@@ -15,6 +15,7 @@ public class IOStreamExample {
         OutputStream out = System.out;
         System.out.println("Hello!");
         System.out.print("helloheloo");
+        System.out.println();
 
         int x = 100;
         System.out.print("Print format integer : x = " + x + ";\n");

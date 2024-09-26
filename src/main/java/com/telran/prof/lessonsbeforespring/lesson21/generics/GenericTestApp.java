@@ -3,7 +3,7 @@ package com.telran.prof.lessonsbeforespring.lesson21.generics;
 public class GenericTestApp {
 
     public static void main(String[] args) {
-        TesString one = new TesString("Hello");
+        TestString one = new TestString("Hello");
         String objOne = one.getObj();
 
         TestInteger two = new TestInteger(5);

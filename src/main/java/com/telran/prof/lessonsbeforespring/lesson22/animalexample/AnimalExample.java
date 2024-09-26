@@ -24,6 +24,7 @@ public class AnimalExample {
         printCat(animals);
         printCat(cats);
         printCat(smallCats);
+        printAnimal(small);
     }
 
     //PECS - Producer Extends, Consumer Super

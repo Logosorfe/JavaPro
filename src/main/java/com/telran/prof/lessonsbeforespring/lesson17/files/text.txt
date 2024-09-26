@@ -1,4 +1,4 @@
-package com.telran.prof.lesson17.files;
+package com.telran.prof.lessonsbeforespring.lesson17.files;
 
 public class SoutExample {
 

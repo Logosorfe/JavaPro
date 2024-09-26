@@ -19,14 +19,14 @@ public class WildcardExample {
         studentPeople.add(oleg);
         studentPeople.add(alex);
 
-        chekPersonAndAdd(people);
-        // chekPersonAndAdd(studentPeople);
+        checkPersonAndAdd(people);
+        // checkPersonAndAdd(studentPeople);
 
-        checkPerson(studentPeople);
+        checkPerson(people);
         addPerson(studentPeople);
     }
 
-    private static void chekPersonAndAdd(List<Person> people) {
+    private static void checkPersonAndAdd(List<Person> people) {
         for (Person person : people) {
             System.out.println(person);
         }
@@ -36,7 +36,7 @@ public class WildcardExample {
 
     //PECS - Producer Extends, Consumer Super
 
-    //? extends SomeClass - принимает тип данных, который является наследником SomeClass
+    //? extends SomeClass - принимает тип данных, который является наследником SomeClass, или сам SomeClass
     //people - отдает нам список и является Producer
     private static void checkPerson(List<? extends Person> people) {
         for (Person person : people) {
@@ -44,7 +44,7 @@ public class WildcardExample {
         }
     }
 
-    //? super SomeClass - принимает тип данных, который является родителем SomeClass, или SomeClass
+    //? super SomeClass - принимает тип данных, который является родителем SomeClass, или сам SomeClass
     //people - принимает новые элементы и является Consumer
     private static void addPerson(List<? super StudentPerson> people) {
         StudentPerson gena = new StudentPerson("Gena");

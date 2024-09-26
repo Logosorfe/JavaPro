@@ -17,9 +17,8 @@ public class ExampleRegexAdvance {
             System.out.print(current + "_");
         }
         System.out.println();
-        Pattern pattern = Pattern.compile(regex);
-        String[] result = pattern.split(actual);
-        for (String current : result ) {
+
+        for (String current : strings ) {
             System.out.print(current + " ");
         }
 

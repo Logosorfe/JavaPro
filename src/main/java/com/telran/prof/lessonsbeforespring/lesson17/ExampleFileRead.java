@@ -13,14 +13,14 @@ public class ExampleFileRead {
         // handle exception
         // }
 
-        String pathToFile = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonseventeen/file.txt";
+        String pathToFile = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/file.txt";
 
         try {
             FileInputStream fileInputStream = new FileInputStream(pathToFile); // FNF
 
             while (fileInputStream.available() > 0) { //IO
                 int read = fileInputStream.read(); //IO
-                System.out.println(" " + (char) read);/** .print почему-то глючит*/
+                System.out.println(" " + (char) read);/** .print почему-то глючит с (char)*/
             }
 
             fileInputStream.close();
