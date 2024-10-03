@@ -15,9 +15,9 @@ public class TestPuppy {
 
         Dog bigDog = new Dog();
 
-        Puppy bigiPuppy;
-        bigiPuppy = new Puppy();
-        String nameBigPuppy = bigiPuppy.name;
+        Puppy bigPuppy;
+        bigPuppy = new Puppy();
+        String nameBigPuppy = bigPuppy.name;
         System.out.println("Name big puppy = " + nameBigPuppy);
 
         Puppy namedPuppy = new Puppy("Baget");
