@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 public class ExampleTryWR {
 
     public static void main(String[] args) {
-        String path = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson18/football.txt";
+        String path = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson18/football.txt";
         // try - with - resources
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(path)))) {
 

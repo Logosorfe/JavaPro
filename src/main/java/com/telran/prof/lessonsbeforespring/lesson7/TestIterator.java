@@ -31,7 +31,6 @@ public class TestIterator {
             String current = iterator.next();
             System.out.print(" " + current);
         }
-        String next = iterator.next();
 
 //        ArrayList<Object> objects = new ArrayList<>();
 //        new LinkedList<>();

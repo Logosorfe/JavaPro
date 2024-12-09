@@ -13,6 +13,5 @@ public class TestMyListIterator {
             System.out.print(" " + iterator.next());
         }
         // One, Two, Three
-        String next = iterator.next();
     }
 }

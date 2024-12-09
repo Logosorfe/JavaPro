@@ -39,6 +39,8 @@ public class TestExampleSeven {
         } else {
             System.out.println("We did not find alex in set!!!");
         }
+        System.out.println(people);
+        System.out.println("----------------------------------------");
         people.add(alex);
         System.out.println(people);
         System.out.println("Size of set is " + people.size());

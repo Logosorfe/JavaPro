@@ -24,7 +24,7 @@ public class TestStackExample {
 
         System.out.println(stack);
         String peek = stack.peek();
-        System.out.println("element on the top of stack is :" + stack.peek());
+        System.out.println("element on the top of stack is :" + peek);
         System.out.println(stack);
 
         String pop = stack.pop();

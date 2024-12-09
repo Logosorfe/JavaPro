@@ -10,7 +10,7 @@ public class ExampleMapOne {
         ExampleMapOne exampleMapOne = new ExampleMapOne();
         Map<Character, Integer> mapOne = exampleMapOne.countLettersInString(test);
         printMap(mapOne);
-
+        System.out.println();
         Map<Character, Integer> mapTwo = exampleMapOne.countLettersInStringTwo(test);
         printMap(mapTwo);
     }

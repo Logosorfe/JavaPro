@@ -11,7 +11,7 @@ import java.util.List;
 public class ParserExample {
 
     public static void main(String[] args) {
-        String path = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson18/football.txt";
+        String path = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson18/football.txt";
         List<Match> matches = new ArrayList<>();
         try {
             FileInputStream stream = new FileInputStream(path);

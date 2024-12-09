@@ -13,8 +13,8 @@ public class CustomDequeApp {
         customArrayDeque.addToTail(8);
         // ->8 5 10 15->
 
-        //head = 5;
-        //tail = 5;
+        //head = 4;
+        //tail = 4;
         //        head      tail
         //[___null 15 10  5  8  null___]
         // 0  1  2  3  4  5  6  7  8   indexes

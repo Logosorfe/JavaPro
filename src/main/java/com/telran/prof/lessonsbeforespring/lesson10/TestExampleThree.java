@@ -1,6 +1,4 @@
-package com.telran.prof.lessonsbeforespring.lesson10.selfwork;
-
-import com.telran.prof.lessonsbeforespring.lesson10.Cat;
+package com.telran.prof.lessonsbeforespring.lesson10;
 
 import java.util.Arrays;
 import java.util.HashSet;

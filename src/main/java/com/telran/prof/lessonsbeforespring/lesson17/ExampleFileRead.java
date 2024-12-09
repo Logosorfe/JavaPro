@@ -13,7 +13,7 @@ public class ExampleFileRead {
         // handle exception
         // }
 
-        String pathToFile = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/file.txt";
+        String pathToFile = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/file.txt";
 
         try {
             FileInputStream fileInputStream = new FileInputStream(pathToFile); // FNF

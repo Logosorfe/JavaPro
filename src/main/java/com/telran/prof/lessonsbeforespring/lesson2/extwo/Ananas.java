@@ -5,12 +5,12 @@ public class Ananas extends Fruit {
     private int cellulose;
 
     public Ananas() {
-        System.out.println("Subclass class constructor call");
+        System.out.println("Subclass constructor call");
 
-        System.out.println("Sub class object hashcode : " + this.hashCode());
-        System.out.println("" + this.hashCode() + " " + super.hashCode());
+        System.out.println("Subclass object hashcode : " + this.hashCode());
+        System.out.println(this.hashCode() + " " + super.hashCode());
 
-        System.out.println("" + this.getClass().getName() + " " + super.getClass().getName());
+        System.out.println(this.getClass().getName() + " " + super.getClass().getName());
     }
 
     public int getCellulose() {

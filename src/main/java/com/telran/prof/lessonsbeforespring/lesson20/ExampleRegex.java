@@ -11,7 +11,7 @@ public class ExampleRegex {
 
         Pattern pattern = Pattern.compile(regex);
         boolean matches = pattern.matcher(actual).matches();
-        System.out.println("Actual string contains REGEX("+regex+") = " + matches);
+        System.out.println("Actual string contains REGEX(" + regex + ") = " + matches);
 
         boolean result = Pattern.matches(regex, actual);
         System.out.println("Actual contains = " + result);

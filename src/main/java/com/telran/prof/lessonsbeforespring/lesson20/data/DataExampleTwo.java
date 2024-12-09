@@ -16,7 +16,7 @@ public class DataExampleTwo {
                 String.format(locale, "%tZ\n", date);
         System.out.println(format);
 
-        String birthday = String.format("My birthday is %d year , %d month, %d day",1900, 10 , 10);
+        String birthday = String.format("My birthday is %d year, %d month, %d day",1900, 10 , 10);
         System.out.println(birthday);
     }
 }

@@ -17,7 +17,8 @@ public class CustomReaderExample {
             int[] array = {13, 2, 4};
             System.out.println(array[5]); //IOFB
             System.out.println("Hello");
-            reader.close(); /** как видно - не работает, поэтому закрывать потоки надо в самом конце кода */
+            reader.close(); /** как видно - не работает, поэтому закрывать потоки без Autoclosable надо в самом конце,
+             когда - после блока try-catch*/
         } catch (Exception exception) {
             System.out.println("Hello from Catch block");
             exception.printStackTrace();

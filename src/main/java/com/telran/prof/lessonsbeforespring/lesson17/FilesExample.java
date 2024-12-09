@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class FilesExample {
 
     public static void main(String[] args) {
-        String path = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/files/out.txt";
+        String path = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/files/out.txt";
 
         //Create file as object
         File file = new File(path);
@@ -16,12 +16,12 @@ public class FilesExample {
 
         // that file exists
         System.out.println("File exists " + file.exists());
-        String dirPath = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/files/";
+        String dirPath = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/files/";
         File dir = new File(dirPath);
         System.out.println("Is directory " + dir.isDirectory());
 
         //create directory
-        File newDirectory = new File(dirPath + "/another");
+        File newDirectory = new File(dirPath + "another");
         System.out.println("New directory exists - " + newDirectory.exists());
         boolean isCreated = newDirectory.mkdir();
         System.out.println("New directory has just been created - " + isCreated);
@@ -32,7 +32,7 @@ public class FilesExample {
         System.out.println("file from files is delete ? " + isDeleted);
 
         //list file names
-        String pathToLesson = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/";
+        String pathToLesson = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/";
         File lesson = new File(pathToLesson);
         String[] list = lesson.list();
         System.out.println(Arrays.toString(list));

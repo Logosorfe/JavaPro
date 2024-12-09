@@ -4,8 +4,6 @@ import java.util.Arrays;
 
 public class EnumExample {
 
-    public String helloPhrase = "Hello";
-
     public static void main(String[] args) {
         Day[] values = Day.values();
         System.out.println(Arrays.toString(values));

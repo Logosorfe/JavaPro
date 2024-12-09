@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 public class ExampleFileWrite {
 
     public static void main(String[] args) {
-        String pathToFile = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/fileOut.txt";
+        String pathToFile = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson17/fileOut.txt";
         String text = "Hello from Java Class";
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(pathToFile); /** при создании этого объекта будет создан или пересоздан

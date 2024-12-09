@@ -10,8 +10,8 @@ public class TestRW {
     public static void main(String[] args) {
         //Reader, Writer
 
-        String pathIn = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson18/football.txt";
-        String pathOut = "C:/Users/logos/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson18/outFootball.txt";
+        String pathIn = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson18/football.txt";
+        String pathOut = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson18/outFootball.txt";
         try (FileReader reader = new FileReader(pathIn); FileWriter writer = new FileWriter(pathOut);
              BufferedReader bufferedReader = new BufferedReader(reader)) {
             while (bufferedReader.ready()) {
