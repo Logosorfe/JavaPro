@@ -1,6 +1,5 @@
-package com.telran.prof.lesson23;
+package com.telran.prof.lessonsbeforespring.lesson23;
 
-import com.telran.prof.lessonsbeforespring.lesson23.Box;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
