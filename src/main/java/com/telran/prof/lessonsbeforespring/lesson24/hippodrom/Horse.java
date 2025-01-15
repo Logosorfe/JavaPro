@@ -4,22 +4,28 @@ import java.time.LocalTime;
 
 public class Horse implements Runnable {
 
-    private String name;
+    private final String name;
 
-    private int step;
+    private final int step;
 
-    private int loopLength;
+    private final int loopLength;
 
-    private int currentPosition = 0;
+    private int currentPosition;
 
-    public Horse(String name, int step, int loopLength) {
+    private final byte index;
+
+    private final String[] result;
+
+    public Horse(String name, int step, int loopLength, byte index, String[] result) {
         this.name = name;
-        this.step = step + 1;
+        this.step = step;//Поменял в исполнительном классе HippApp на random.nextInt(10) + 1, чтобы можно было сделать тест
         this.loopLength = loopLength;
+        this.index = index;
+        this.result = result;
     }
 
     @Override
-    public void run() {
+    public void run() { //Сделал тест на данный метод
         while (currentPosition < loopLength) {
             try {
                 Thread.sleep(10);
@@ -29,6 +35,6 @@ public class Horse implements Runnable {
             currentPosition += step;
             System.out.println("Horse " + name + " step by " + currentPosition);
         }
-        System.out.println("I am " + name + " finish time " + LocalTime.now());
+        result[index] = ("I am " + name + " finish time " + LocalTime.now());
     }
 }

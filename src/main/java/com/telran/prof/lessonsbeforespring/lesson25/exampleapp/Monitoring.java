@@ -15,7 +15,7 @@ public class Monitoring implements Runnable {
 
     @Override
     public void run() {
-        String path = "/Volumes/Macintosh HD - Data 1/telran3010prof/src/main/java/com/telran/prof/lessontwentyfive/exampleapp/text.txt";
+        String path = "C:/Users/Logosorfe/IdeaProjects/JavaPro/src/main/java/com/telran/prof/lessonsbeforespring/lesson25/exampleapp/text.txt";
         FileWriter writer= null;
         try {
           writer = new FileWriter(path);
