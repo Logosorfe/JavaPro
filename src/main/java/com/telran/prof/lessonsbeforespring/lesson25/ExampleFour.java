@@ -26,6 +26,7 @@ public class ExampleFour {
         threadTwo.join();
         threadThree.join();
 
+
         System.out.println("Counter = " + counter);
         System.out.println("List size = " + list.size());
         System.out.println("Counter two = " + counterTwo.get());
