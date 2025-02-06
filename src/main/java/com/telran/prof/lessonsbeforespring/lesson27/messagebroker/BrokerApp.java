@@ -19,10 +19,5 @@ public class BrokerApp {
         Thread.sleep(10000);
 
         System.out.println("Producer in status " + producer.getState());
-
-        //List<String> strings = new ArrayList<>();
-        //String s1 = strings.stream().filter(s -> s.startsWith("K")).findFirst()
-                //.get();
-                //.orElse("Hello");
     }
 }

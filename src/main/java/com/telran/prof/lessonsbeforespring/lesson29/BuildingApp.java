@@ -24,15 +24,15 @@ public class BuildingApp {
         es.execute(new Building("Dortmund", cd3, stages));
         es.execute(new Building("Essen", cd4, stages));
 
-//        try {
-//            cd1.await();
-//            cd2.await();
-//            cd3.await();
-//            cd4.await();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
+        try {
+            cd1.await();
+            cd2.await();
+            cd3.await();
+            cd4.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         es.shutdown();
         System.out.println("Threads are end");
 

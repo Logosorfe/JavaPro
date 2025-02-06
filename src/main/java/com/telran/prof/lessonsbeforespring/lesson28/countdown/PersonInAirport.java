@@ -30,7 +30,7 @@ public class PersonInAirport implements Runnable {
 
             //Код, который будет выполнен после того как счетчик станет равен 0
 
-            System.out.println("[!] " + name + "go to plane");
+            System.out.println("[!] " + name + " go to plane");
 
         } catch (InterruptedException e) {
             e.printStackTrace();

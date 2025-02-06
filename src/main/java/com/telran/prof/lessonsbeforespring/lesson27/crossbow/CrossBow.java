@@ -14,7 +14,7 @@ public class CrossBow {
                     System.out.println("The arrows are over");
                     arrows = 0;
                     System.out.println("Count of arrows " + arrows);
-                  //  notify();
+                    notify();
                     try {
                         wait();
                     } catch (InterruptedException e) {
@@ -32,7 +32,7 @@ public class CrossBow {
             System.out.println("New arrows on the way");
             arrows = 10;
             System.out.println("Count of arrows " + arrows);
-         //   notify();
+            notify();
             try {
                 wait();
             } catch (InterruptedException e) {

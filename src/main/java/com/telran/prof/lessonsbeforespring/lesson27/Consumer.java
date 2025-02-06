@@ -15,10 +15,9 @@ public class Consumer extends Thread {
         while (true) {
 
             synchronized (strings) {
-                if(strings.size()>0) {
-                    String s = strings.get(0);
+                if (strings.size() > 0) {
+                    String s = strings.remove(0);/**Метод remove возвращает тот элемент, который был удален */
                     System.out.println("Object from list =" + s);
-                    strings.remove(0);
                     System.out.println("Size of list = " + strings.size());
                 } else {
                     try {
@@ -28,14 +27,6 @@ public class Consumer extends Thread {
                     }
                 }
             }
-        }
-    }
-
-    private void sleepNow(long ms) {
-        try {
-            Thread.sleep(ms);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
     }
 }

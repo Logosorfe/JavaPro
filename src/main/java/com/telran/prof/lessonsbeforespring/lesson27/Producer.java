@@ -24,7 +24,7 @@ public class Producer extends Thread {
 
     private void sleepNow(long ms) {
         try {
-            Thread.sleep(ms);
+            sleep(ms);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

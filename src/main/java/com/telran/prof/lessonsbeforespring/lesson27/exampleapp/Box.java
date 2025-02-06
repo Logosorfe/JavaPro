@@ -10,6 +10,6 @@ public class Box {
 
     @Override
     public String toString() {
-        return "Box id =" + id;
+        return "Box id = " + id;
     }
 }

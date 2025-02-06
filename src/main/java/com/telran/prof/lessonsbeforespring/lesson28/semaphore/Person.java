@@ -35,7 +35,7 @@ public class Person implements Runnable {
                     if (freeTables[i] == false) {
                         freeTables[i] = true;
                         tableNumber = i;
-                        System.out.println("[!]" + name + "occupied " + (i + 1));
+                        System.out.println("[!]" + name + " occupied " + (i + 1));
                         break;
                     }
                 }
@@ -47,9 +47,13 @@ public class Person implements Runnable {
             e.printStackTrace();
         }
         //Освободил стол и шатаясь иду к выходу
-        synchronized (freeTables) {
+//        synchronized (freeTables) {
             freeTables[tableNumber] = false;
-        }
+//        }
+        /** Так как столик могут занимать только 5 человек, а остальные ждут в очереди и не двигаются,
+         * пока эти пятеро их не освободят, то по логике вещей они могут и одновременно впятером
+         * освободить свои столики. Друг другу они при этом не помешают и не возникнет ошибок из-за
+         * состояния гонок потоков. Поэтому закомментировал синхронизацию  */
 
         //Говорю на выходе я все, можете пускать другого
         semaphore.release(); // inc 1, go  // 1 //2

@@ -1,7 +1,7 @@
 package com.telran.prof.lessonsbeforespring.lesson26.incorrect;
 
-import static com.telran.prof.lessonsbeforespring.lesson25.ExampleFour.counter;
-
+import static com.telran.prof.lessonsbeforespring.lesson26.incorrect.MthExampleIncorrect.counter;
+/** Ошибка была в том что сослались на counter в классе предыдущего урока - lesson25.ExampleFour.counter;*/
 public class Runner implements Runnable {
 
     @Override
@@ -14,10 +14,10 @@ public class Runner implements Runnable {
             //2 increase 1
             //3 set
 
-            synchronized (this) { // можно окружить блок кода
-                counter++;
+//            synchronized (this) { // можно окружить блок кода
+//                counter++;
                 System.out.println("Thread " + name + " " + counter++);
-            }
+//            }
 
 
             try {
