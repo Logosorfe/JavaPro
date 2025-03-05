@@ -2,6 +2,7 @@ package com.telran.prof.springlessons.lesson30.springbootdemo.repository;
 
 
 import com.telran.prof.springlessons.lesson30.springbootdemo.model.Coffee;
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
@@ -15,9 +16,10 @@ public class CoffeeInMemoryRepository {
     private Map<String, Coffee> storage = new HashMap<>();
 
     public CoffeeInMemoryRepository() {
-        init();
+        //
     }
 
+    @PostConstruct
     private void init() {
         Coffee cafe_ganador = new Coffee("Cafe Ganador");
         Coffee cafe_cereza = new Coffee("Cafe Cereza");
