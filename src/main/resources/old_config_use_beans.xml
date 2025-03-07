@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="org.lesson31_32_33" />
+        <!-- key : simpleWordRepository, value : new SimpleWordRepository() /-->
+<!--    <bean id="simpleWordRepository" class="repository.lesson31_32_33.SimpleWordRepository"-->
+<!--          scope="singleton"></bean>-->
+
+    <!-- key : exampleServiceImpl, value : new ExampleServiceImpl(simpleWordRepository) /-->
+<!--    <bean id="exampleServiceImpl" class="service.lesson31_32_33.ExampleServiceImpl">-->
+<!--        <constructor-arg ref="simpleWordRepository"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="exampleServiceImplV2" class="service.lesson31_32_33.ExampleServiceImplV2">-->
+
+<!--    </bean>-->
+
+<!--    <bean id="exampleServiceImplV3" class="service.lesson31_32_33.ExampleServiceImplV3">-->
+
+<!--    </bean>-->
+
+<!--    <bean id="exampleController" class="controller.lesson31_32_33.ExampleController">-->
+<!--        <constructor-arg ref="exampleServiceImpl"></constructor-arg>-->
+<!--    </bean>-->
+
+</beans>
