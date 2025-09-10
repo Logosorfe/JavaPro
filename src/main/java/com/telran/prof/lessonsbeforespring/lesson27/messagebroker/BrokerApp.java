@@ -12,6 +12,7 @@ public class BrokerApp {
         producer.start();
 
         Thread consumer = new Thread(new Consumer(queue));
+        consumer.setDaemon(true);
         consumer.start();
 
         System.out.println("Producer and Consumer has been started");

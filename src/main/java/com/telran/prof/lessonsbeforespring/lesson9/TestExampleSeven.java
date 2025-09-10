@@ -6,7 +6,7 @@ import java.util.Set;
 public class TestExampleSeven {
 
     public static void main(String[] args) {
-        //Alex code -646029981
+        //Alex code 810444315
         Person alex = new Person("Alex", "Alexeev", 30);
         Person oleg = new Person("Oleg", "Olegov", 35);
         Person maxim = new Person("Maxim", "Maximov", 40);

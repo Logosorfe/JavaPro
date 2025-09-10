@@ -28,7 +28,7 @@ public class PersonApp {
         Collections.sort(list, (o1, o2) -> o1.getAge() - o2.getAge());
         System.out.println(list);
         //Сортировка по имени
-        Collections.sort(list, ((o1, o2) -> o1.getName().compareTo(o2.getName())));
+        Collections.sort(list, (o1, o2) -> o1.getName().compareTo(o2.getName()));
         System.out.println(list);
     }
 }

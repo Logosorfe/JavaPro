@@ -22,5 +22,6 @@ public class TestComparePerson {
         personSet.add(new Person("Alex", 20));
         personSet.add(new Person("Maxim", 10));
         System.out.println(personSet);
+        //Странно, но тут не переопределены методы хэш и qls и получается сет будет сравнивать уникальность по адресам
     }
 }

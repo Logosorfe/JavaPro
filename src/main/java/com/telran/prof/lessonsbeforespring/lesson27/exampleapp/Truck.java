@@ -28,7 +28,8 @@ public class Truck extends Thread {
                 storage.setBoxes(boxList);
                 System.out.println("\nLoad to storage " + boxList.size() + " boxes\n");
                 sleepNow(3000);
-                storage.notify();
+                storage.notify(); /** Тут лучше конечно использовать notifyAll(),
+                 чтобы сразу задействовать несколько разгрузчиков  */
             }
         }
     }

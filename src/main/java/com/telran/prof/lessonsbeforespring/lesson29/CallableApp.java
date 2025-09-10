@@ -17,7 +17,7 @@ public class CallableApp {
         } catch (TimeoutException e) {
             System.out.println("No result");
         }
-        System.out.println("End get result : ");
+        System.out.println("End get result. ");
         es.shutdown();
     }
 }

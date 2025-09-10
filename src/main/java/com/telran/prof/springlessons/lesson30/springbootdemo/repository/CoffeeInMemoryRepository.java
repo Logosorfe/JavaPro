@@ -34,10 +34,20 @@ public class CoffeeInMemoryRepository {
 
     public Set<Coffee> getAll() {
         return new HashSet<>(storage.values());
-    }
+    } /** Почему в классе Coffee не переопределили методы hash & equals? */
 
     public Coffee add(Coffee coffee) {
-        Coffee newCoffee = new Coffee(coffee.getName());
+        Coffee newCoffee = new Coffee(coffee.getName()) /** Этот код лишний, он не гарантирует уникальности uuid
+         Нужно так
+         public Coffee add(Coffee coffee) {
+         Coffee newCoffee;
+         do {
+         newCoffee = new Coffee(coffee.getName());
+         } while (storage.containsKey(newCoffee.getId()));
+
+         storage.put(newCoffee.getId(), newCoffee);
+         return newCoffee;
+         }*/;
         storage.put(newCoffee.getId(), newCoffee);
         return newCoffee;
     }

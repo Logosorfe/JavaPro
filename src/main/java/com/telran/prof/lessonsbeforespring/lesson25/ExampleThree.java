@@ -23,6 +23,7 @@ public class ExampleThree {
         System.out.println("State one is " + threadOne.getState());
         System.out.println("State two is " + threadTwo.getState());
 
+        threadOne.setDaemon(true); /** Иначе процесс не заканчивается приходится останавливать вручную */
         threadOne.start();
         threadTwo.start();
 
