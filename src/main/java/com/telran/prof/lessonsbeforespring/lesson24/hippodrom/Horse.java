@@ -18,14 +18,14 @@ public class Horse implements Runnable {
 
     public Horse(String name, int step, int loopLength, byte index, String[] result) {
         this.name = name;
-        this.step = step;//Поменял в исполнительном классе HippApp на random.nextInt(10) + 1, чтобы можно было сделать тест
+        this.step = step;
         this.loopLength = loopLength;
         this.index = index;
         this.result = result;
     }
 
     @Override
-    public void run() { //Сделал тест на данный метод
+    public void run() {
         while (currentPosition < loopLength) {
             try {
                 Thread.sleep(10);
