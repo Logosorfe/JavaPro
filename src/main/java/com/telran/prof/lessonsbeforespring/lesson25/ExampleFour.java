@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class ExampleFour {
 
-    public static int counter = 0;
+    public static int counter;
 
     public static AtomicInteger counterTwo = new AtomicInteger();
 
