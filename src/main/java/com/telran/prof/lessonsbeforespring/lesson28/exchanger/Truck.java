@@ -26,7 +26,7 @@ public class Truck implements Runnable {
     public void run() {
         Random random = new Random();
         System.out.println("Truck with number " + number + " has parcels " + parcels[0] + " and " + parcels[1]);
-        System.out.println("Truck with number " + number + "start from " + departure + " to " + destination);
+        System.out.println("Truck with number " + number + " start from " + departure + " to " + destination);
 
         try {
             Thread.sleep(random.nextInt(5) * 1000L);
