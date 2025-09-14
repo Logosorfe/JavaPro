@@ -8,7 +8,7 @@ public class StorageApp {
 
     public static void main(String[] args) {
         Storage storage = new Storage();
-        currentIndex.set(0);
+        currentIndex.set(0);// Зачем он тут нужен, если он не принимает никакого участия в приложении?
 
         for (int i = 0; i < 10; i++) {
             new Thread(new Unloader(storage)).start();
