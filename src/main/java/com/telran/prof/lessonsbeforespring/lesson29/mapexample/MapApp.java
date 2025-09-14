@@ -27,7 +27,7 @@ public class MapApp {
 
         checkTime(sm, cd2,"sm");
 
-        checkTime(hm, cd3,"hm");
+        checkTime(hm, cd3,"hm");//Только в этом случае будет состояние гонки потоков и результат будет неверен
     }
 
     private static void checkTime(Map<String, Integer> map, CountDownLatch cd, String name) {
