@@ -21,9 +21,8 @@ public class Unloader extends Thread {
 //                        storage.notify();
 //                    }
                     List<Box> boxes = storage.getBoxes();
-                    Box box = boxes.get(0);
+                    Box box = boxes.remove(0);;
                     System.out.println("I am " + name + " get box  " + box );
-                    boxes.remove(0);
                 } else {
                     try {
                         System.out.println("I am " + name + " go to wait");
