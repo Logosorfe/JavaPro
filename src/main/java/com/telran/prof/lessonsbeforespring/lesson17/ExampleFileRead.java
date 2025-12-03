@@ -20,7 +20,7 @@ public class ExampleFileRead {
 
             while (fileInputStream.available() > 0) { //IO
                 int read = fileInputStream.read(); //IO
-                System.out.println(" " + (char) read);/** .print почему-то глючит с (char)*/
+                System.out.print("" + (char) read);
             }
 
             fileInputStream.close();
