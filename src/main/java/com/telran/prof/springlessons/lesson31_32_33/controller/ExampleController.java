@@ -21,7 +21,7 @@ public class ExampleController {
 //
 //    @Autowired // 1. Construction injection
 //    public ExampleController (ExampleService exampleService) {
-//        this. exampleService = exampleService;
+//        this.exampleService = exampleService;
 //    }
 
     public String example() {
