@@ -4,5 +4,5 @@ public interface WordRepository {
 
     String getWord();
 
-    public String getUuid();
+    String getUuid();
 }
