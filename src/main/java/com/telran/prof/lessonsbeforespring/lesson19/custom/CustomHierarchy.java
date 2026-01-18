@@ -21,4 +21,5 @@ public class CustomHierarchy {
     private static void three()  {
         throw new BookNotFoundException("Hello");
     }
+    //Исключения типа unchecked (наследники RuntimeException) можно выбрасывать без объявления throws
 }

@@ -14,10 +14,9 @@ public class Runner implements Runnable {
             //2 increase 1
             //3 set
 
-//            synchronized (this) { // можно окружить блок кода
-//                counter++;
+            synchronized (this) {
                 System.out.println("Thread " + name + " " + counter++);
-//            }
+            }
 
 
             try {

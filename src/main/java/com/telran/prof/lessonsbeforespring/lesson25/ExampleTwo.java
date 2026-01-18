@@ -8,7 +8,7 @@ public class ExampleTwo {
         Thread thread = new Thread(new TestThread());
         thread.start();
 
-        Thread.sleep(133);
+        Thread.sleep(10000);
 
         thread.interrupt();  // Running - isInterrupted
                              // sleep, wait - try-catch

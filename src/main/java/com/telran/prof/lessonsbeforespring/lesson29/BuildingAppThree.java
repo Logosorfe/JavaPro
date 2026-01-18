@@ -35,5 +35,5 @@ public class BuildingAppThree {
         es.shutdown();
         System.out.println("Threads are end");
     }
-    }
+}
 
