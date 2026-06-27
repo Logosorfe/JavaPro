@@ -14,15 +14,15 @@ public class Match {
 
     private int watchers;
 
-    private String staduim;
+    private String stadium;
 
-    public Match(Calendar date, String teamOne, String teamTwo, String result, int watchers, String staduim) {
+    public Match(Calendar date, String teamOne, String teamTwo, String result, int watchers, String stadium) {
         this.date = date;
         this.teamOne = teamOne;
         this.teamTwo = teamTwo;
         this.result = result;
         this.watchers = watchers;
-        this.staduim = staduim;
+        this.stadium = stadium;
     }
 
     public Calendar getDate() {
@@ -45,8 +45,8 @@ public class Match {
         return watchers;
     }
 
-    public String getStaduim() {
-        return staduim;
+    public String getStadium() {
+        return stadium;
     }
 
     @Override
@@ -59,7 +59,7 @@ public class Match {
                 ", teamTwo='" + teamTwo + '\'' +
                 ", result='" + result + '\'' +
                 ", watchers=" + watchers +
-                ", stadium='" + staduim + '\'' +
+                ", stadium='" + stadium + '\'' +
                 '}';
     }
 }
