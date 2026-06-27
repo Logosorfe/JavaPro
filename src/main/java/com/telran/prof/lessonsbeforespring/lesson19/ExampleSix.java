@@ -6,7 +6,7 @@ public class ExampleSix {
         int[] array = {1, 2, 3};
 
         try {
-            System.out.println(array[2]);
+            System.out.println(array[3]);
         } catch (ArrayIndexOutOfBoundsException exception) {
             System.out.println("Incorrect index");
         }
